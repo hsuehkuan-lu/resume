@@ -47,6 +47,7 @@
 \usepackage{setspace}
 \usepackage{fontspec}
 \usepackage[inline]{enumitem}
+\usepackage{listings}
 \usepackage{array}
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
 \usepackage{anyfontsize}
@@ -110,7 +111,7 @@ ItalicFont=SourceSansPro-RegularIt.otf
 \textit{ #1 \vspace{-0.2cm}} }
 
 %%%% Set Item Spacing
-\setlist[itemize]{align=parleft,left=0pt..1em}
+% \setlist[itemize]{align=parleft,left=0pt..1em}
 
 %%%% New Itemize "Zitemize" Formatting - tighter spacing than itemize
 \newenvironment{zitemize}{
@@ -137,29 +138,7 @@ ItalicFont=SourceSansPro-RegularIt.otf
 %%%%%%% --------------------------------------------------------------------------------------
 %%%%%%%  HEADER
 %%%%%%% --------------------------------------------------------------------------------------
-\begin{center}
-    \begin{minipage}[b]{0.24\textwidth}
-            {\href{https://www.linkedin.com/in/hsuehkuan-lu-180407/}{Linkedin: hsuehkuan-lu-180407} } \\
-            \href{https://github.com/hsuehkuan-lu}{Github: hsuehkuan-lu}
-            
-    \end{minipage}% 
-    \begin{minipage}[b]{0.5\textwidth}
-            \centering
-            {\HUGE Hsuehkuan Lu} \\ %
-            \vspace{0.1cm}
-            {\color{UI_blue} \Large{Machine Learning Engineer}} \\
-            \large 9F.-2, No. 25, Fubei Rd., Yancheng Dist., Kaohsiung City, Taiwan \\
-            \large (+886) 905-193-233 \\
-            \large \href{mailto:hsuehkuan.peter.lu@gmail.com}{hsuehkuan.peter.lu@gmail.com} 
-    \end{minipage}% 
-    \begin{minipage}[b]{0.24\textwidth}
-            \flushright \large  %Willing to Relocate
-            \includegraphics[width=3cm, height=4cm]{images/me.jpg}
-    \end{minipage}   
-    
-\vspace{-0.15cm} 
-{\color{UI_blue} \hrulefill}
-\end{center}
+\input{cv-sections/header}
 
 %%%%%%% --------------------------------------------------------------------------------------
 %%%%%%%  EDUCATION
